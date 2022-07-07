@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Calculator</title>
+        <style>
+            body { display: flex; height: 100vh; }
+            label {
+                width: 80px;
+                padding: 10px;
+                display: inline-block;
+            }
+            button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            box-shadow: 2px 2px gray;
+            font: bold 3em Impact;
+            outline: none;
+            }
+            .calculator { 
+            margin: auto; 
+            padding: 20px;
+            background: silver;
+            box-shadow: 0 0 10px black;
+            border-radius: 25px;
+            }
+            .calchead {
+                text-align:center;
+                margin: 10px;
+                padding-bottom: 10px;
+                font: 2em Impact;
+            }
+            .calcfoot {
+                text-align: right;
+                margin-right: 20px
+            }
+            #copy{
+                border: 3px solid yellow;
+            }
+            #clear{
+                border: 3px solid red;
+            }
+            #number1, #number2, #result{
+            width:330px;
+            padding:10px;
+            text-align: right;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class = "calchead">Calculator</div>
+            <div>
+                <label for = "number1">Operand A: </label><input type="text" id="number1"><br>
+                <label for = "number2">Operand B: </label><input type="text" id="number2" label = "Число 2"><br>
+                <label for = "result">Result: </label><input type="text" id="result" label = "Результат" readonly>  
+            </div>
+                
+            
+            <div>
+                <button onclick="calc('+')">+</button>
+                <button onclick="calc('-')">-</button>
+                <button onclick="calc('/')">/</button>
+                <button onclick="calc('*')">*</button>
+            </div>
+            <div>
+                <button onclick="calc('**')">^</button>
+                <button onclick="calc('root')">√</button>
+                <button id = "copy" onclick="copyResult()">=></button>
+                <button id = "clear" onclick = "clrscr()">C</button>
+            </div>
+            <div class = "calcfoot">by Teolen</div>
+        </div>
+        <script src="js/calculator.js"></script>
+    </body>
+</html>
