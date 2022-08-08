@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'/>
+        <title>
+            Fibonacci
+        </title>
+        <style>
+            textarea {
+                width: 98vw;
+                height: auto;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Fibonacci
+        </h2>
+        <h3>Choose the amount of fibonacci numbers:</h3>
+        <div class = "main">
+            <input type = "number" id = "number" min = "0"/>
+            <button onclick = "outFibonacci()">OK</button>
+            <p>Result: </p>
+            <textarea id = "result"></textarea>
+            <p id = "lastNumber"></p>
+        </div>
+        <script src = "js/fibonacci.js"></script>
+    </body>
+</html>
