@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>JavaScript testing</title>
+        <style>
+            body{
+                display: flex;
+                height: 95vh;
+            }
+            button {
+                height: 50px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                box-shadow: 2px 2px gray;
+                font: bold 2em Impact;
+            }
+            #main {
+            margin: auto; 
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 5px;
+            }
+            #buttons{
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            #spinner{
+                margin: 125px;
+                height: 300 px;
+                width: 300 px;
+            }
+
+        </style>
+    </head>
+     <body>
+        <div id = "main">
+            <div id = "buttons">
+                <button onclick = "start()">Start</button>
+                <button onclick = "change()">Change</button>
+                <button onclick = "stop()">Stop</button>
+                <button onclick = "reset()" disabled = "disabled" title = "В разработке">Reset</button></br>
+                <button onclick = "spinMe()" id = "spinMe">YOU SPIN ME RIGHT ROUND!</button>
+                <button onclick = "superStop()" id = "superStop">STOP IT!</button>
+            </div>
+            <img id = "spinner" src="res/green-square.jpg">
+            <div>
+                <script src="js/spinMe.js"></script>
+            </div>
+        </div>
+     </body>
+</html>
